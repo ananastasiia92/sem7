@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Задайте двумерный массив размером mxn, 
+//заполненный случайными целыми числами.
+
+using System;
 using static System.Console;
 
 Clear();
