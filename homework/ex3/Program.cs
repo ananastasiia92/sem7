@@ -40,20 +40,20 @@ void PrintArray(int[,] inArray)
     {
         for (int j = 0; j < inArray.GetLength(1); j++)
         {
-            Console.Write($"{inArray[i,j]}{";"}");
+            Console.Write($"{inArray[i,j]}{" "}");
         }
         Console.WriteLine();
     }
 }
 
 void SumArithmeticMean(int [,] array){
-   for (int j = 0; j < array.GetLength(1); j++){
     double sum = 0;
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
+   for (int j = 0; j < array.GetLength(1); j++){
+    for (int i = 0; i < array.GetLength(0); i++){
+
         sum += array[i, j];
     }
-    Console.Write($"{ sum / array.GetLength(0)} ");
+    Console.Write($"{ (sum / array.GetLength(0)):F2} ");
 }
 Console.ReadLine();
 }
